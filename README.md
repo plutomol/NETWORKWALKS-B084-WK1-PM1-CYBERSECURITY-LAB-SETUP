@@ -40,3 +40,38 @@ VirtualBox was installed as the hypervisor to create and manage virtual machines
 ### Step 3: Create the NAT Network
 A private NAT Network was created in VirtualBox to allow virtual machines to communicate with each other while maintaining network isolation from the host environment.
 
+<img width="955" height="586" alt="1-Screenshot-Vbox-NAT-Configuration" src="https://github.com/user-attachments/assets/da8503f3-31a8-4f3d-94b9-acead6c96561" />
+
+A **NAT Network** was selected because multiple virtual machines connected to the same NAT Network can communicate with one another while also having outbound network connectivity.
+
+
+This will allow future attacker and target VMs to communicate within the lab.
+
+### Step 4: Import Kali Linux
+
+The Kali Linux virtual machine was downloaded from the official Kali Linux website and imported into VirtualBox.
+
+**Extracting kali .7zip file**
+
+<img width="584" height="390" alt="2-Screenshot-Extract-Kali-7zip" src="https://github.com/user-attachments/assets/88224044-364b-44bd-a9bb-91e4af202890" />
+
+
+
+
+The virtual machine's network adapter was configured with the following settings:
+
+**Network Adapter Configuration:**
+
+| **Component** | **Configuration** |
+|:---|:---|
+| Adapter | Adapter 1 |
+| Attached to | NAT Network |
+| Network Name | `NatNetwork` |
+| Adapter Type | Intel PRO/1000 MT Desktop |
+
+**Virtual Machine Resources:**
+
+| **Component** | **Allocation** |
+|:---|:---|
+| RAM | 2048 MB |
+
